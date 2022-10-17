@@ -26,15 +26,29 @@ describe("Game router", () => {
   test("should return 400 if name not provided", async () => {
     const response = await request(app).post("/games").send({})
     // TODO
-    console.log(response.body)
+    console.log(response)
     expect(response.statusCode).toBe(400)
-    //expect(response.body.name).toEqual("test")
+    expect(response.text).toEqual("Missing name parameter")
   })
 
   test("should return 400 if name is empty", async () => {
     const response = await request(app).post("/games").send({ name: "" })
     // TODO
-    //console.log(response)
+    expect(response.statusCode).toBe(400)
+    expect(response.text).toEqual("Missing name parameter")
+    console.log(response)
 
   })
 })
+ 
+
+//git checkout nomdelabranche
+
+//git checkout master && git merge feature/create-game
+
+
+//git add .
+
+//git commit -m "fin seance6"
+
+//git push
