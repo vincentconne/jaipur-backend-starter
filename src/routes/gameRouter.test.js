@@ -8,7 +8,7 @@ jest.mock("../database")
 
 // Prevent shuffle for tests
 jest.mock("lodash")
-lodash.shuffle.mockImplementation(x => x)
+lodash.shuffle.mockImplementation((x) => x)
 
 afterEach(() => {
   db.clear()
@@ -140,13 +140,12 @@ describe("Game router", () => {
   })
 })
 
-//git checkout nomdelabranche
+// git checkout nomdelabranche
 
-//git checkout master && git merge feature/create-game
+// git checkout master && git merge feature/create-game
 
+// git add .
 
-//git add .
+// git commit -m "fin seance6"
 
-//git commit -m "fin seance6"
-
-//git push
+// git push

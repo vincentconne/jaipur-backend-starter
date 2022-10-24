@@ -1,6 +1,6 @@
 import * as gameService from "./gameService"
 
-/*describe("Game service", () => {
+/* describe("Game service", () => {
   test("should put camels from hand to herd", () => {
     const game = {
       _players: [
@@ -36,7 +36,7 @@ import * as gameService from "./gameService"
   ///
   const deck = gameService.initDeck()
   expect(deck.length).toBe(52)
-})*/
+}) */
 
 describe("Game service", () => {
   test("should init a deck", () => {
