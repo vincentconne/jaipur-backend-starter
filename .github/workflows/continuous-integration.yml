@@ -16,3 +16,8 @@ jobs:
         run: npm run test
       - name: Execution ESLint
         run: npm run lint
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: coverage/*
